@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <div id="CCculator">
+    
+    <input type="text" id="display" readonly>
+
+    <div class="buttons-container">
+  <button onclick="count='';
+  document.querySelector('#display').value = count;
+  "> C  </button>
+
+  <button onclick="count += '1'; document.querySelector('#display').value = count;"> 1</button>
+  <button onclick="count += '+'; document.querySelector('#display').value = count;"> + </button>
+  <button onclick="count += '2'; document.querySelector('#display').value = count;"> 2  </button>
+  <button onclick="count += '3'; document.querySelector('#display').value = count;"> 3  </button>
+  <button onclick="count += '4'; document.querySelector('#display').value = count;"> 4 </button>
+  <button onclick="count += '5'; document.querySelector('#display').value = count;"> 5</button>
+  <button onclick="count+='6'; document.querySelector('#display').value=count;"> 6 </button>
+  <button onclick="count += '-'; document.querySelector('#display').value = count;"> - </button>
+  <button onclick="count += '7'; document.querySelector('#display').value = count;"> 7 </button>
+  <button onclick="count += '8'; document.querySelector('#display').value = count;"> 8  </button>
+  <button onclick="count += '9'; document.querySelector('#display').value = count;"> 9  </button>
+  <button onclick="count += '*'; document.querySelector('#display').value = count;"> *  </button>
+  <button class="wide" onclick="count += '0'; document.querySelector('#display').value = count;"> 0 </button>
+  <button onclick="count += '/'; document.querySelector('#display').value = count;"> /  </button>
+  <button onclick="count += '.'; document.querySelector('#display').value = count;"> . </button>
+  <button onclick="count = eval(count); document.querySelector('#display').value = count;"> = </button>
+  
+  </div>
+  </div>
+  <script>
+    let count = '';
+    document.querySelector('#display').value = count;
+  </script>
+</body>
+</html>
